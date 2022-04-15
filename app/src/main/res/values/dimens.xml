@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_small">8sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_big">32sp</dimen>
+
+    <dimen name="margin_small">8sp</dimen>
+    <dimen name="margin_medium">16sp</dimen>
+    <dimen name="margin_big">32sp</dimen>
+    <dimen name="margin_bigger">64sp</dimen>
+
+    <dimen name="padding_small">8sp</dimen>
+    <dimen name="padding_medium">16sp</dimen>
+    <dimen name="padding_big">32sp</dimen>
+
+    <dimen name="animation_splash">360dp</dimen>
+
+
+</resources>
