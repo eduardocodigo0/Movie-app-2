@@ -1,13 +1,8 @@
-package com.solinftec.mobile.movieapp2
+package com.eduardocodigo0.mobile.movieapp2.ui
 
-import android.content.Context
-import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.AttributeSet
-import android.util.Log
-import android.view.View
-import android.widget.Toast
+import com.eduardocodigo0.mobile.movieapp2.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

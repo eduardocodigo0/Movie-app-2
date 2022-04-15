@@ -1,4 +1,4 @@
-package com.solinftec.mobile.movieapp2
+package com.eduardocodigo0.mobile.movieapp2
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
