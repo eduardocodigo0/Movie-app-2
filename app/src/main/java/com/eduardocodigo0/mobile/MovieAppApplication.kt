@@ -2,6 +2,7 @@ package com.eduardocodigo0.mobile
 
 import android.app.Application
 import com.eduardocodigo0.mobile.movieapp2.di.networkModules
+import com.eduardocodigo0.mobile.movieapp2.di.viewModelModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -10,7 +11,7 @@ class MovieAppApplication: Application() {
         super.onCreate()
         startKoin {
             androidContext(this@MovieAppApplication)
-            modules(listOf(networkModules))
+            modules(listOf(networkModules, viewModelModules))
         }
     }
 }

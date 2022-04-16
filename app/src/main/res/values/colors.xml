@@ -11,6 +11,8 @@
     <color name="dark_gray">#555</color>
     <color name="yellow">#F6EE67</color>
     <color name="light_pink">#EC85B5</color>
+    <color name="light_orange">#fed8b1</color>
+    <color name="orange">#ff7800</color>
 
     <color name="light_gray_transparency">#55cccccc</color>
     <color name="red_transparency">#55F84D4D</color>
