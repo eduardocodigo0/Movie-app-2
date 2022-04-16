@@ -15,5 +15,9 @@
 
     <dimen name="animation_splash">360dp</dimen>
 
+    <dimen name="list_item_height">128dp</dimen>
+    <dimen name="list_item_img_width">160dp</dimen>
+    <dimen name="list_item_card_radius">16dp</dimen>
+
 
 </resources>

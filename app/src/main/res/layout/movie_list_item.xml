@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/list_item_card_radius"
+    android:layout_marginVertical="@dimen/margin_medium">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_item_card">
+
+        <ImageView
+            android:id="@+id/iv_movie_poster"
+            android:layout_width="@dimen/list_item_img_width"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_movie_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iv_movie_poster"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=" Titulo do filme kkkkkkkkkkkkkkkkkkkkkkk"
+
+            />
+
+        <FrameLayout
+            android:id="@+id/ll_movie_points"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:elevation="0dp"
+            android:backgroundTint="@color/yellow"
+            android:background="@drawable/movie_rate_display_shape"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tv_movie_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="10.0"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="@dimen/padding_small"
+                android:layout_gravity="center_vertical"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:layout_gravity="center_vertical|end"
+                android:padding="@dimen/padding_small"
+                app:tint="@color/black"
+                />
+
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_calendar"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_calendar"
+            app:tint="@color/design_default_color_on_secondary"
+            app:layout_constraintStart_toEndOf="@id/iv_movie_poster"
+            android:layout_marginStart="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/tv_movie_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release Date: 00/00/00"
+            android:padding="@dimen/padding_small"
+            android:fontFamily="sans-serif-thin"
+            app:layout_constraintTop_toTopOf="@id/iv_calendar"
+            app:layout_constraintStart_toEndOf="@id/iv_calendar"
+            app:layout_constraintBottom_toBottomOf="@id/iv_calendar"
+            android:textColor="@color/design_default_color_on_secondary"
+            />
+
+        <FrameLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/like_circle"
+            android:layout_margin="@dimen/margin_small"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_heart"
+                android:padding="@dimen/padding_small"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
